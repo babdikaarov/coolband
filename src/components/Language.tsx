@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Language() {
   const [drop, setDrop] = useState(false);
