@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="hero-container">
       <video autoPlay muted loop className="hero">
-        <source src="./src/assets/videos/heroVideo.mp4" type="video/mp4" />
+        <source src="./assets/videos/heroVideo.mp4" type="video/mp4" />
       </video>
 
       <Link

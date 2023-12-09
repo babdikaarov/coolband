@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <h1>
         <Link to="/">
-          <img src="./src/assets/logos/coolbandLogo.png" alt="CoolBand" />
+          <img src="./assets/logos/coolbandLogo.png" alt="CoolBand" />
         </Link>
       </h1>
       <nav className="header-nav">
@@ -20,7 +20,7 @@ export default function Header() {
       </nav>
       <div>
         <Link to="">
-          <img src="./src/assets/logos/coolStudioLogo.png" alt="CoolStudio" />
+          <img src="./assets/logos/coolStudioLogo.png" alt="CoolStudio" />
         </Link>
       </div>
     </header>
