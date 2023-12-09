@@ -1,0 +1,26 @@
+.about {
+    margin: 68px 100px 78px;
+    display: flex;
+    justify-content: space-between;
+    gap: 164px;
+
+}
+.about-content {
+    width: 50%;
+}
+
+.about-content h3 {
+    font-size: 32px;   
+}
+
+.about-content p {
+    line-height: 150%; 
+    letter-spacing: 0.36px;
+    font-family: $main-font;
+}
+.about-image {
+    width: 402px;
+    height: 495px;
+    background-color: grey;
+    border-radius: 13px;
+}

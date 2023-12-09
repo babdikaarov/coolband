@@ -1,0 +1,29 @@
+.hero {
+    height: 598px;
+    object-fit: cover;
+    width: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.hero-link {
+    color: black;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FED102;
+    width: 169px;
+    height: 36px;
+    text-decoration: none;
+}
+
+.hero-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}

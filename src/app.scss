@@ -1,0 +1,18 @@
+@import "./styles/variables";
+@import "./styles/header";
+@import "./styles/hero";
+@import "./styles/about";
+
+:root {
+    background-color: $main-background-color;
+    color: $main-font-color;
+    font-family: $main-font;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+}
