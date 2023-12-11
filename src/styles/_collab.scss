@@ -1,0 +1,51 @@
+.our-collab h3{
+    margin: 150px 150px 80px;
+}
+
+.collab-cards {
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.collab-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+.collab-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collab-card {
+    position: relative;
+    border-radius: 15px;
+    height: 340px;
+    min-width: 240px;
+    background-position: -115px -35px;
+    background-repeat: no-repeat;
+}
+
+.shadow {
+    border-radius: 15px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 39.06%, rgba(0, 0, 0, 0.60) 78.65%, rgba(0, 0, 0, 0.79) 100%);
+}
+
+.collab-card p {
+    color: #FFF;
+
+    /* H4- Regular 18 */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

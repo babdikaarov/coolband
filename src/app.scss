@@ -2,6 +2,10 @@
 @import "./styles/header";
 @import "./styles/hero";
 @import "./styles/about";
+@import "./styles/whyus";
+@import "./styles/ourEvents";
+@import "./styles/ourTeam";
+@import "./styles/collab";
 
 :root {
     background-color: $main-background-color;
@@ -11,8 +15,34 @@
 
 ul {
     list-style-type: none;
+    margin: 0;
 }
 
 body {
     margin: 0;
+}
+
+a, button  {
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+h3 {
+    color: #FCFCFC;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 40px */
+    letter-spacing: 0.64px;
+}
+
+h4 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.48px;
 }

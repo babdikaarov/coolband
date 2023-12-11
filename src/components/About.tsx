@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <article className="about-content">
         <h3>Cool Band</h3>
         <div>
@@ -23,7 +23,9 @@ export default function About() {
           </p>
         </div>
       </article>
-      <div className="about-image"></div>
+      <div className="about-image">
+        <img src="./assets/images/about-image.jpeg" alt="cool band show" />
+      </div>
     </section>
   );
 }

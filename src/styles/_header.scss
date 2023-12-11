@@ -7,19 +7,19 @@ header {
     justify-content: space-between;
 }
 
-h1 {
-    padding-right: 108px;
-}
+
 
 .header-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 59px;
+    gap: 0px 59px;
+    flex-wrap: wrap;
 }
 
 header ul {
     padding: 0;
+    text-decoration: none;
 }
 
 .header-icons {
@@ -27,12 +27,21 @@ header ul {
     justify-content: space-around;
     align-items: center;
     gap: 39px;
-
+    margin-top: 10px;
 }
 .navigation {
     display: flex;
-    font-size: 18px;
     gap: 45px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.navigation a {
+    text-decoration: none;
+    color: #FFF;
+
 }
 .social-links{
     display: flex;

@@ -1,0 +1,50 @@
+.whyus {
+    margin: 0 100px 0 150px;
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    gap: 0 105px;
+    align-items: center;
+}
+
+.whyus h3 {
+    color: #FCFCFC;
+
+/* H1 - Bold 32 */
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+letter-spacing: 0.64px;
+}
+
+.whyus h4 {
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+}
+.whyus span {
+    position: absolute;
+    transform: translate(-33px, 4px);
+}
+
+.coolstudio-link {
+    padding: 10px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    background: #FED102;
+    width: 177px;
+ 
+}
+.coolstudio-link a {
+    color: #151515;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+}

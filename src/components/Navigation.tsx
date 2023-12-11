@@ -1,10 +1,12 @@
 export default function Navigation() {
   return (
     <ul className="navigation">
-      <li>about</li>
-      <li>gallery</li>
-      <li>Collaborations</li>
-      <li>Lirycs</li>
+      <li>
+        <a href="#about">О нас</a>
+      </li>
+      <li>Галерея</li>
+      <li>Коллаборация</li>
+      <li>Репертуар</li>
     </ul>
   );
 }
