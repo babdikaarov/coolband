@@ -1,5 +1,7 @@
 # Cool Band
 
+## <https://coolband.netlify.app/>
+
 ## Environment installation
 
 1. Check node if installed
