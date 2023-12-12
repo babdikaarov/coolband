@@ -1,25 +1,7 @@
-// import { useEffect, useState } from "react";
-
 export default function Hero() {
-  // const [videoLoaded, setVideoLoaded] = useState(false);
-
-  // useEffect(() => {
-  //   const videoElement = document.getElementById("videoTag");
-
-  //   if (videoElement) {
-  //     videoElement.addEventListener("loadeddata", () => {
-  //       setVideoLoaded(true);
-  //     });
-  //   }
-  // }, []);
   return (
     <div className="hero-container">
-      {/* {videoLoaded && (
-        <video id="videoTag" autoPlay muted loop className="hero">
-          <source src="./assets/videos/heroVideo.mp4" type="video/mp4" />
-        </video>
-      )} */}
-      <video id="videoTag" autoPlay muted loop className="hero">
+      <video id="videoTag" autoPlay muted loop playsInline className="hero">
         <source src="./assets/videos/heroVideo.mp4" type="video/mp4" />
       </video>
       <a

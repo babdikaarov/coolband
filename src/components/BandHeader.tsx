@@ -19,7 +19,7 @@ export default function Header() {
         </div>
       </nav>
       <div>
-        <Link to="">
+        <Link to="/">
           <img src="./assets/logos/coolStudioLogo.png" alt="CoolStudio" />
         </Link>
       </div>

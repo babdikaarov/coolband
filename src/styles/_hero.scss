@@ -1,4 +1,5 @@
 .hero {
+    margin-top: 100px;
     background-color: grey;
     height: 598px;
     object-fit: cover;
@@ -11,14 +12,20 @@
     position: absolute;
     z-index: 2;
     display: flex;
-    padding: 10px;
     margin-bottom: 35px;
-    justify-content: center;
-    align-items: center;
+   
+
+    width: 506px;
+    height: 75px;
+    flex-shrink: 0;
     border-radius: 16px;
-    background: #FED102;
-    width: 169px;
-    height: 36px;
+    background: var(--Yellow, #FED102);
+
+    /* H3- Medium */
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    letter-spacing: 0.48px;
+
 }
 
 .hero-container {
