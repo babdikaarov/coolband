@@ -8,7 +8,7 @@ export default function Hero() {
         className="hero-link"
         href="https://wa.me/+97433344627?text=some%20how%20its%20working"
       >
-        invite
+        Пригласить на мероприятие
       </a>
     </div>
   );
