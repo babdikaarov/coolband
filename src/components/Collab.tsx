@@ -12,7 +12,7 @@ export default function Collab() {
     lastName: "lastName",
   });
   return (
-    <div className="our-collab">
+    <div className="our-collab" id="collab">
       <h3>Коллаборация</h3>
       <div className="collab-cards">
         {cards.map((el, i) => (

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import SocialLinks from "./SocialLinks";
 import Navigation from "./Navigation";
 import Language from "./Language";
@@ -6,11 +7,11 @@ import Language from "./Language";
 export default function Header() {
   return (
     <header>
-      <h1>
-        <Link to="/">
+      <HashLink to="/#head">
+        <h1>
           <img src="./assets/logos/coolbandLogo.png" alt="CoolBand" />
-        </Link>
-      </h1>
+        </h1>
+      </HashLink>
       <nav className="header-nav">
         <Navigation />
         <div className="header-icons">

@@ -8,13 +8,14 @@ import {
 import CoolBand from "./pages/coolBand";
 import NotFoundPage from "./pages/notfound(404)";
 import Main from "./pages/main";
+import Events from "./pages/events/Events";
 
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<CoolBand />}>
       <Route index={true} element={<Main />}></Route>
+      <Route path="/events" element={<Events />}></Route>
       <Route path="/event" element={<NotFoundPage />}></Route>
-      <Route path="/events" element={<NotFoundPage />}></Route>
     </Route>
   )
 );
