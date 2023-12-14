@@ -16,7 +16,7 @@ export default function Collab() {
       <h3>Коллаборация</h3>
       <div className="collab-cards">
         {cards.map((el, i) => (
-          <div className="collab-card-container">
+          <div className="collab-card-container" key={i}>
             <div
               key={i}
               className="collab-card"

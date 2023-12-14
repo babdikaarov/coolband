@@ -3,6 +3,7 @@ import eventCards from "../temp/eventCards";
 export default function OurEvents() {
   type EventCards = { id: number; src: string };
   const eventPhotos: EventCards[] = eventCards;
+  console.log(eventPhotos);
 
   return (
     <div className="our-events">
@@ -12,15 +13,15 @@ export default function OurEvents() {
       <div className="our-events-container">
         {eventPhotos.map((card, i) => (
           <>
-            <div key={card.id}>
+            <div key={i}>
               <img src={card.src} alt="events" />
             </div>
-            <div key={card.id + eventCards.length}>
+            {/* <div key={card.id + eventCards.length}>
               <img
                 src={eventCards[eventCards.length - i - 1].src}
                 alt="events"
               />
-            </div>
+            </div> */}
           </>
         ))}
       </div>
