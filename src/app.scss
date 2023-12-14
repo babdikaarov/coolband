@@ -9,7 +9,10 @@
 @import "./styles/ourClients";
 @import "./styles/contactUs";
 @import "./styles/footer";
-@import "./styles/gallaryCards";
+@import "./styles/galleryCards";
+@import "./styles/galleryCard";
+@import "./styles/galleryOverlay";
+
 
 :root {
     background-color: $main-background-color;
@@ -49,4 +52,21 @@ h4 {
     font-weight: 500;
     line-height: 150%; /* 36px */
     letter-spacing: 0.48px;
+}
+
+#studioLogo {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--Blue, #5979FA);
+    box-shadow: 0px 0px 9px 0px #0428E6;
+    // box-shadow: 0px 4px 5.400000095367432px 0px #4668F2;
+    // box-shadow: 100px 100px 100px 0px #5979FA inset;
+
+}
+
+#bandLogo {
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 9px 10px -11px rgba(255,207,0,0.6);
+    -webkit-box-shadow: 0px 9px 10px -11px rgba(255,207,0,0.6);
+    -moz-box-shadow: 0px 9px 10px -11px rgba(255,207,0,0.6);
 }

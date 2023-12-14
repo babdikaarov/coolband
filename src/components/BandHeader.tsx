@@ -7,8 +7,8 @@ import Language from "./Language";
 export default function Header() {
   return (
     <header>
-      <HashLink to="/#head">
-        <h1>
+      <HashLink to="/#main">
+        <h1 id="bandLogo">
           <img src="./assets/logos/coolbandLogo.png" alt="CoolBand" />
         </h1>
       </HashLink>
@@ -19,7 +19,7 @@ export default function Header() {
           <Language />
         </div>
       </nav>
-      <div>
+      <div id="studioLogo">
         <Link to="/">
           <img src="./assets/logos/coolStudioLogo.png" alt="CoolStudio" />
         </Link>

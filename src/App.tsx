@@ -1,27 +1,25 @@
 import "./app.scss";
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import CoolBand from "./pages/coolBand";
-import NotFoundPage from "./pages/notfound(404)";
-import Main from "./pages/main";
-import Events from "./pages/events/Events";
-
-const appRouter = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<CoolBand />}>
-      <Route index={true} element={<Main />}></Route>
-      <Route path="/events" element={<Events />}></Route>
-      <Route path="/event" element={<NotFoundPage />}></Route>
-    </Route>
-  )
-);
+import Main from "./pages/coolBand/main";
+import Gallery from "./pages/coolBand/gallery";
+import GalleryCards from "./components/GalleryCards";
+import GalleryCard from "./components/GalleryCard";
 
 function App() {
-  return <RouterProvider router={appRouter} />;
+  return (
+    <>
+      <Routes>
+        <Route path="" element={<CoolBand />}>
+          <Route index={true} element={<Main />}></Route>
+          <Route path="events" element={<Gallery />}>
+            <Route index element={<GalleryCards />}></Route>
+            <Route path=":id" element={<GalleryCard />}></Route>
+          </Route>
+        </Route>
+      </Routes>
+    </>
+  );
 }
 
 export default App;
