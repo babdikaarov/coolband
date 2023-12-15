@@ -36,15 +36,14 @@ export default function TwoGis2() {
     // let myIcon;
 
     // Check if DG (2GIS) is defined
-    if (typeof DG !== "undefined" || DG.ready === true) {
+    if (DG.ready === true) {
       // Create a map centered at [54.98, 82.89] with zoom level 13
       map = DG.map("map", {
-        center: [54.98, 82.89],
-        zoom: 13,
+        center: coolStudioLocation,
+        zoom: 17,
       });
 
-      map.on("click", function (e) {
-        console.log(e);
+      map.on("click", function () {
         console.log("clicked");
         window.location.href = coolStudiolink;
       });
@@ -66,9 +65,11 @@ export default function TwoGis2() {
 
       //  2nd option
 
-      DG.marker([54.98, 82.89]).addTo(map).bindLabel("Мы находимся здесь!", {
-        static: true,
-      });
+      DG.marker(coolStudioLocation)
+        .addTo(map)
+        .bindLabel("Мы находимся здесь!", {
+          static: true,
+        });
     }
   }
 
