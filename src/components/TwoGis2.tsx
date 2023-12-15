@@ -24,7 +24,7 @@ export default function TwoGis2() {
   useEffect(() => {
     const timerId = setTimeout(() => {
       console.log("Timer has elapsed after 2 seconds!");
-    }, 2000);
+    }, 3000);
     return () => {
       clearTimeout(timerId);
       console.log("Timer has been cleared!");
@@ -33,15 +33,16 @@ export default function TwoGis2() {
 
   function initializeMap() {
     let map;
-    // let myIcon;
+    let myIcon;
 
     // Check if DG (2GIS) is defined
-    if (typeof DG !== "undefined" && DG.ready === true) {
+    if (DG.ready === true || typeof DG !== "undefined") {
       // Create a map centered at [54.98, 82.89] with zoom level 13
       map = DG.map("map", {
         center: coolStudioLocation,
         zoom: 17,
       });
+      DG.marker(coolStudioLocation).addTo(map);
 
       map.on("click", function () {
         console.log("clicked");
@@ -50,22 +51,14 @@ export default function TwoGis2() {
 
       //   Add Marker below
 
-      //   1st option
-      //   myIcon = DG.icon({
-      //     iconUrl: "https://coolband.netlify.app/coolband.png",
-      //     iconSize: [48, 48],
-      //   });
-      //   DG.marker([54.98, 82.89], {
-      //     icon: myIcon,
-      //   })
-      //     .addTo(map)
-      //     .bindLabel("Мы находимся здесь!", {
-      //       static: true,
-      //     });
-
-      //  2nd option
-
-      DG.marker(coolStudioLocation)
+      //  Icon option
+      myIcon = DG.icon({
+        iconUrl: "https://coolband.netlify.app/coolband.png",
+        iconSize: [38, 38],
+      });
+      DG.marker(coolStudioLocation, {
+        icon: myIcon,
+      })
         .addTo(map)
         .bindLabel("Мы находимся здесь!", {
           static: true,

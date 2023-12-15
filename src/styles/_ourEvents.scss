@@ -10,6 +10,8 @@
     width: calc(100% + 100px);
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
+    position: relative;
+    z-index: 4;
 }
 
 .oval1 h3 {
@@ -48,8 +50,13 @@
     display: flex;
     gap: 36px;
     // clip-path: path("M1291.5 0.00263051C1158.09 26.1684 918.885 76.0026 646 76.0026C373.108 76.0026 133.914 26.1672 0.5 0V400C133.915 373.833 373.115 311.003 646 311.003C918.885 311.003 1158.09 373.833 1291.5 400V0.00263051Z");
-    overflow-x: scroll;
-    overflow-y: hidden;
+    // overflow-x: scroll;
+    // overflow-y: hidden;
+    animation: scroll 3s linear infinite;
+  }
+  @keyframes scroll {
+    0%{transform: translateX(0)}
+    100%{transform: translateX(calc(-400px * 5));}
   }
   .our-events-container::-webkit-scrollbar {
     display: none;
@@ -57,6 +64,7 @@
 
 
 .our-events-container div {
+
     width: 400px;
     height: 400px;
   }
