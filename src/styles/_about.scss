@@ -1,0 +1,36 @@
+.about {
+    padding: 100px;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+}
+
+
+.about-content h3 {
+    margin-top: 0px;
+    color: #FCFCFC;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-content p {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.36px;
+    font-style: normal;
+}
+.about-image {
+    max-width: 402px;
+    max-height: 495px;
+}
+
+.about-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
