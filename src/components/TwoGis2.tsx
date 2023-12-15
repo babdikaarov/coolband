@@ -36,7 +36,7 @@ export default function TwoGis2() {
     // let myIcon;
 
     // Check if DG (2GIS) is defined
-    if (DG.ready === true) {
+    if (typeof DG !== "undefined" || DG.ready === true) {
       // Create a map centered at [54.98, 82.89] with zoom level 13
       map = DG.map("map", {
         center: coolStudioLocation,
