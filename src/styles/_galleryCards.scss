@@ -11,7 +11,7 @@
 .gallery-cards div{
     aspect-ratio: 400 / 270;
     border-radius: 16px;
-    background-color: white;
+    background: center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;

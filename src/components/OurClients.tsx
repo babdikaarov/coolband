@@ -1,19 +1,24 @@
+import partners from "../temp/partners";
 export default function OurClients() {
-  type ClientCards = { id: number; src: string };
-  const cards: ClientCards[] = new Array(10).fill({
-    id: 1,
-    src: "./assets/temp/cola.png",
-  });
+  type ClientCards = { alt: string; src: string };
+  const cards: ClientCards[] = partners;
+
+  function checkFileExtension(src: string): string {
+    const regex = /\.png$/;
+    return regex.test(src) ? "png" : "NoPng";
+  }
+
   return (
     <div className="our-clients">
       <h3>Наши клиенты</h3>
       <div className="client-cards">
         {cards.map((card, i) => (
-          <div
+          <img
             key={i}
-            className="client-card"
-            style={{ backgroundImage: `url(${card.src})` }}
-          ></div>
+            className={`client-card ${checkFileExtension(card.src)}`}
+            src={card.src}
+            alt={card.alt}
+          ></img>
         ))}
         <div style={{ minWidth: "100px" }}></div>
       </div>

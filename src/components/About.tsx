@@ -1,30 +1,17 @@
+import aboutContent from "../temp/about";
 export default function About() {
   return (
     <section className="about" id="about">
       <article className="about-content">
         <h3>Cool Band</h3>
         <div>
-          <p>
-            Coolshowband- яркая команда настоящих профессионалов, состоящая из
-            инструментального кавер-бэнда, танцевально-интерактивного коллектива
-            и огненных диджеев, которые зажгут любое мероприятие своим
-            виртуозным исполнением, драйвовым шоу, и качественным звуком.{" "}
-          </p>
-          <p>
-            За нашими плечами огромное количество выступлений на разных
-            площадках и ивентах. Мы дарим своим слушателям незабываемую
-            возможность насладиться шедеврами отечественных и мировых
-            исполнителей в живом звучании.{" "}
-          </p>
-          <p>
-            Многолетний международный опыт и мастерство позволяет нам с
-            гибкостью подходить к любым запросам, жанрам, а также языку
-            исполнения.
-          </p>
+          {aboutContent.content.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
         </div>
       </article>
       <div className="about-image">
-        <img src="./assets/images/about-image.jpeg" alt="cool band show" />
+        <img src={aboutContent.img} alt="cool band show" />
       </div>
     </section>
   );

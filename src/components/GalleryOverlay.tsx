@@ -5,12 +5,12 @@ interface GalleryOverlayProps {
   setIndex: React.Dispatch<React.SetStateAction<number>>;
   showOverlay: boolean;
   index: number;
-  cards: number[];
+  imageList: number[];
 }
 
 const GalleryOverlay: React.FC<GalleryOverlayProps> = ({
   index,
-  cards,
+  imageList,
   showOverlay,
   setIndex,
   setShowOverlay,
@@ -55,7 +55,7 @@ const GalleryOverlay: React.FC<GalleryOverlayProps> = ({
           </svg>
         </button>
         <div className="gallery-overlay-img">
-          <img src="#" alt={`${cards[index]}`} />
+          <img src="#" alt={`${imageList[index]}`} />
         </div>
         <button
           className="gallery-overlay-right"

@@ -1,11 +1,8 @@
+import teamList from "../temp/teamList";
+
 export default function OurTeam() {
-  type TeamCards = { id: number; src: string; name: string; role: string };
-  const cards: TeamCards[] = new Array(10).fill({
-    id: 1,
-    src: "./assets/temp/Card.jpg",
-    name: "Anara",
-    role: "Vocal",
-  });
+  type TeamCards = { id: number; src: string; role: string; name: string };
+  const cards: TeamCards[] = teamList;
   return (
     <div className="our-team">
       <h3>Наша команда</h3>
@@ -18,9 +15,7 @@ export default function OurTeam() {
           >
             <div className="shadow"></div>
             <div className="team-card-content">
-              <h4>
-                {i + 1} {el.name}
-              </h4>
+              <h4>{el.name}</h4>
               <p>{el.role}</p>
             </div>
           </div>

@@ -1,6 +1,71 @@
 {
-  "hash": "9560da77",
-  "browserHash": "ff6fcfe2",
-  "optimized": {},
-  "chunks": {}
+  "hash": "1d55d68a",
+  "browserHash": "61010d55",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "8fb8704e",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "a3654827",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "46a0cf8f",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "ce37fdaa",
+      "needsInterop": false
+    },
+    "react-router-hash-link": {
+      "src": "../../node_modules/react-router-hash-link/dist/react-router-hash-link.esm.js",
+      "file": "react-router-hash-link.js",
+      "fileHash": "5dfe805b",
+      "needsInterop": false
+    },
+    "@tanstack/react-query": {
+      "src": "../../node_modules/@tanstack/react-query/build/modern/index.js",
+      "file": "@tanstack_react-query.js",
+      "fileHash": "b54d4a04",
+      "needsInterop": false
+    },
+    "@tanstack/react-query-devtools": {
+      "src": "../../node_modules/@tanstack/react-query-devtools/build/modern/index.js",
+      "file": "@tanstack_react-query-devtools.js",
+      "fileHash": "223e2333",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-TQBZAPHE": {
+      "file": "chunk-TQBZAPHE.js"
+    },
+    "chunk-SWFLLUTV": {
+      "file": "chunk-SWFLLUTV.js"
+    },
+    "chunk-CAKFYEZR": {
+      "file": "chunk-CAKFYEZR.js"
+    },
+    "chunk-NNCLXYIK": {
+      "file": "chunk-NNCLXYIK.js"
+    },
+    "JDX7DFYK-ZFBGUJSJ": {
+      "file": "JDX7DFYK-ZFBGUJSJ.js"
+    },
+    "chunk-QWCCYYFL": {
+      "file": "chunk-QWCCYYFL.js"
+    },
+    "chunk-3SPBDNLE": {
+      "file": "chunk-3SPBDNLE.js"
+    }
+  }
 }

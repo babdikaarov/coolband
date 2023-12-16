@@ -1,44 +1,25 @@
 const eventCards = [
     {
         id: 1,
-        src: "./assets/temp/Card.jpg"
+        src: "./assets/temp/ourEvents/Card.jpg"
     },
     {
         id: 2,
-        src: "./assets/temp/Card(1).jpg"
+        src: "./assets/temp/ourEvents/Card(1).jpg"
     },
     {
         id: 3,
-        src: "./assets/temp/Card(2).jpg"
+        src: "./assets/temp/ourEvents/Card(2).jpg"
     },
     {
         id: 4,
-        src: "./assets/temp/Card(3).jpg"
+        src: "./assets/temp/ourEvents/Card(3).jpg"
     },
     {
         id: 4,
-        src: "./assets/temp/Card(4).jpg"
+        src: "./assets/temp/ourEvents/Card(4).jpg"
     },
-    {
-        id: 1,
-        src: "./assets/temp/Card.jpg"
-    },
-    {
-        id: 2,
-        src: "./assets/temp/Card(1).jpg"
-    },
-    {
-        id: 3,
-        src: "./assets/temp/Card(2).jpg"
-    },
-    {
-        id: 4,
-        src: "./assets/temp/Card(3).jpg"
-    },
-    {
-        id: 4,
-        src: "./assets/temp/Card(4).jpg"
-    },
+    
 ]
 
 export default eventCards;

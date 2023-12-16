@@ -95,7 +95,7 @@ export default function GalleryCard() {
 
       <GalleryOverlay
         setIndex={setIndex}
-        cards={cards}
+        imageList={cards}
         index={index}
         showOverlay={showOverlay}
         setShowOverlay={setShowOverlay}

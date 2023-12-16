@@ -1,8 +1,9 @@
 import eventCards from "../temp/eventCards";
+import React from "react";
 
 export default function OurEvents() {
   type EventCards = { id: number; src: string };
-  const eventPhotos: EventCards[] = eventCards;
+  const eventPhotos: EventCards[] = [...eventCards, ...eventCards];
 
   return (
     <div className="our-events">
@@ -11,9 +12,11 @@ export default function OurEvents() {
       </div>
       <div className="our-events-container">
         {eventPhotos.map((card, i) => (
-          <div key={i}>
-            <img src={card.src} alt="events" />
-          </div>
+          <React.Fragment key={i}>
+            <div key={i}>
+              <img src={card.src} alt="events" />
+            </div>
+          </React.Fragment>
         ))}
       </div>
       <div className="oval2">
