@@ -1,31 +1,35 @@
-export default function SocialLinks() {
+import { FC } from "react";
+import { socialIcons } from "./icons";
+interface SocialLinksProps {
+   links: {
+      telegram: string;
+      whatsapp: string;
+      instagram: string;
+      youtube: string;
+      tiktok: string;
+   };
+}
+
+const SocialLinks: FC<SocialLinksProps> = ({ links }) => {
    return (
       <ul className="social-links">
          <li id="telegram">
-            <a href="#">
-               <img src="/assets/icons/telegram_fill.svg" alt="telegram" />
-            </a>
+            <a href={links.telegram}>{socialIcons.telegram}</a>
          </li>
          <li id="whatsapp">
-            <a href="https://wa.me/+97433344627?text=some%20how%20its%20workingCoolBand">
-               <img src="/assets/icons/whatsapp_fill.svg" alt="whatsapp" />
-            </a>
+            <a href={links.whatsapp}>{socialIcons.whatsapp}</a>
          </li>
          <li id="instagram">
-            <a href="#">
-               <img src="/assets/icons/ins_fill.svg" alt="instagram" />
-            </a>
+            <a href={links.instagram}>{socialIcons.instagram}</a>
          </li>
          <li id="youtube">
-            <a href="#">
-               <img src="/assets/icons/youtube_fill.svg" alt="youtube" />
-            </a>
+            <a href={links.youtube}>{socialIcons.youtube}</a>
          </li>
          <li id="tiktok">
-            <a href="#">
-               <img src="/assets/icons/tiktok_fill.svg" alt="tiktok" />
-            </a>
+            <a href={links.tiktok}>{socialIcons.tiktok}</a>
          </li>
       </ul>
    );
-}
+};
+
+export default SocialLinks;

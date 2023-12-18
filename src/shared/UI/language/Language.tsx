@@ -1,10 +1,10 @@
 import { useState } from "react";
-
+import { langIcon } from "./icons";
 export default function Language() {
    const [drop, setDrop] = useState(false);
    return (
-      <div id="language" onClick={() => setDrop(!drop)}>
-         <img src="/assets/icons/world_2_fill.svg" alt="" />
+      <div className="language" onClick={() => setDrop(!drop)}>
+         <a href="#">{langIcon}</a>
          {drop && (
             <ul className="select-language">
                <li>KG</li>

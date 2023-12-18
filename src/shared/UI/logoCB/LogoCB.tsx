@@ -1,13 +1,19 @@
+import React, { FC } from "react";
 import { HashLink } from "react-router-hash-link";
 
-function LogoCB() {
+interface LogoCBProps extends React.HTMLAttributes<HTMLImageElement> {
+   src: string;
+   alt: string;
+}
+
+const LogoCB: FC<LogoCBProps> = ({ ...props }) => {
    return (
-      <HashLink to="/#main">
-         <h1 id="bandLogo">
-            <img src="/coolbandLogo.png" alt="CoolBand" />
+      <HashLink to="/#home">
+         <h1 id="page-logo">
+            <img {...props} />
          </h1>
       </HashLink>
    );
-}
+};
 
 export default LogoCB;

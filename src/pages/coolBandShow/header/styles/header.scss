@@ -1,5 +1,6 @@
-header {
-    
+.header {
+    // for responsive fix later
+    max-width: calc(1440px - 200px);
     top: 0;
     width: -webkit-fill-available;
     padding: 0 100px;
@@ -45,8 +46,6 @@ header ul {
 }
 .navigation a {
     text-decoration: none;
-    color: #FFF;
-
 }
 .social-links{
     display: flex;
@@ -57,4 +56,18 @@ header ul {
     position: absolute;
     background: gray;
     padding: 10px;
+}
+
+.header-active-logo {
+    
+}
+// .header-passive-logo {
+//     padding: 8px;
+//     border-radius: 8px;
+//     border: 1px solid var(--Blue, #5979FA);
+//     box-shadow: 0px 0px 9px 0px #0428E6;
+// }
+
+.active {
+    color: $hover-color;
 }

@@ -1,13 +1,19 @@
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
-function LogoCS() {
+interface LogoCSProps extends React.HTMLAttributes<HTMLImageElement> {
+   src: string;
+   alt: string;
+}
+
+const LogoCS: FC<LogoCSProps> = ({ ...props }) => {
    return (
       <div id="studioLogo">
          <Link to="/">
-            <img src="/coolStudioLogo.png" alt="CoolStudio" />
+            <img {...props} />
          </Link>
       </div>
    );
-}
+};
 
 export default LogoCS;
