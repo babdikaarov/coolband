@@ -20,6 +20,10 @@
     font-family: $main-font;
 }
 
+html {
+    max-width: 1440px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -64,7 +68,3 @@ h4 {
 
 }
 
-#bandLogo {
-    border-bottom: 1px solid transparent;
-  
-}

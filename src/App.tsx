@@ -16,7 +16,6 @@ function App() {
           <Route index element={<Main />}></Route>
           <Route path="events" element={<Gallery />}>
             <Route index element={<GalleryCards />}></Route>
-            {/* <Route index element={<GalleryCards2 />}></Route> */}
             <Route path=":id" element={<GalleryCard />}></Route>
           </Route>
         </Route>
