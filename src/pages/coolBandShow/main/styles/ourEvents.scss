@@ -1,0 +1,16 @@
+.our-events-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 36px;
+    animation: scroll 15s linear infinite;
+  }
+  @keyframes scroll {
+    0%{transform: translateX(-15px)}
+    100%{transform: translateX(calc(-400px * 5))}
+  }
+  .our-events-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  

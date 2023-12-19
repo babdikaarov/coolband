@@ -7,12 +7,14 @@ export default function TwoGis2() {
    const coolStudiolink: string = "https://2gis.kg/bishkek/firm/70000001066401992?m=74.609962%2C42.850329%2F16";
 
    useEffect(() => {
+      console.log(DG);
       const script = document.createElement("script");
 
       script.src = "https://maps.api.2gis.ru/2.0/loader.js?pkg=basic";
       document.head.appendChild(script);
-
+      console.log(script);
       script.onload = () => {
+         console.log(typeof DG);
          console.log("Map has been loaded!");
          initializeMap();
       };
@@ -20,7 +22,7 @@ export default function TwoGis2() {
       // script.addEventListener("load", initializeMap);
 
       return () => {
-         document.head.removeChild(script);
+         // document.head.removeChild(script);
       };
    }, []);
 

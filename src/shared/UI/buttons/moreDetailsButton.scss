@@ -1,0 +1,17 @@
+.moreDetailButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+.moreDetailButton a {
+    color: $main-font-color;
+
+    /* H4 - Medium */
+    font-family: $main-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.4px;
+}

@@ -1,0 +1,14 @@
+
+.collab-cards {
+    padding: 40px 0;
+    margin-left: 100px;
+    display: flex;
+    gap: 24px;
+    overflow-x: scroll;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.collab-cards::-webkit-scrollbar {
+    display: none;
+  }

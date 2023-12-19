@@ -1,8 +1,4 @@
 
-.our-clients {
-    display: flex;
-    flex-direction: column;
-}
 .our-clients-qty {
     margin: 0 auto;
     text-align: center;
@@ -45,6 +41,6 @@
     border-end-start-radius: 15px;
 }
 
-.client-cards::-webkit-scrollbar {
+.our-client-cards::-webkit-scrollbar {
     display: none;
   }

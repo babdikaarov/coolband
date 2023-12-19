@@ -13,22 +13,26 @@
     font-family: $main-font;
 }
 
-body {
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
     margin-top: 100px;
+    overflow: hidden;
+
 }
+
 
 a:hover {
     color: $hover-color;
 }
-
-
 
 // font styles
 
 .global-component-header{
     margin: 0 auto;
     margin-bottom: 64px;
-
+    z-index: 10;
     color: $main-font-color;
     text-align: right;
     font-family: $main-font;
@@ -51,12 +55,21 @@ a:hover {
 }
 
 .h3 {
-    color: #FCFCFC;
+    color: $main-font-color;
     font-family: $main-font;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 44px; /* 183.333% */    
+}
+
+.h5 {
+    color: $main-font-color;
+    font-family: $main-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
 }
 
 
@@ -107,6 +120,6 @@ a:hover {
 
 // media queries responsive section
 
-html {
-    max-width: 1440px;
-}
+// html {
+//     max-width: 1440px;
+// }

@@ -1,6 +1,5 @@
+import ContactUsButton from "../../../../shared/UI/buttons/ContactUsButton";
 import TwoGis2 from "../../../../shared/UI/map/TwoGis2";
-
-import ContactUsButton from "../../../../shared/UI/buttons/contactUsButton";
 
 const ContactUs = () => {
    return (

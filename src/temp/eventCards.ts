@@ -1,22 +1,22 @@
 const eventCards = [
     {
-        id: 1,
+        alt: "Somewhere",
         src: "./assets/temp/ourEvents/Card.jpg"
     },
     {
-        id: 2,
+        alt: "Somewhere",
         src: "./assets/temp/ourEvents/Card(1).jpg"
     },
     {
-        id: 3,
+        alt: "Somewhere",
         src: "./assets/temp/ourEvents/Card(2).jpg"
     },
     {
-        id: 4,
+        alt: "Somewhere",
         src: "./assets/temp/ourEvents/Card(3).jpg"
     },
     {
-        id: 4,
+        alt: "Somewhere",
         src: "./assets/temp/ourEvents/Card(4).jpg"
     },
     
