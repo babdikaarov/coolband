@@ -1,22 +1,20 @@
-import React, { FC } from "react";
-import LogoCB from "../../../../shared/UI/logoCB/LogoCB";
-import LogoCS from "../../../../shared/UI/logoCS/LogoCS";
+import { FC } from "react";
 import FooterBox from "../../../../shared/UI/footerBox/FooterBox";
+import Logo from "../../../../shared/UI/logo/Logo";
 
 type content = {
    p: string;
    li: string[];
 };
+type LogoProps = {
+   src: string;
+   alt: string;
+   color: string;
+};
 
 interface FooterProps {
-   mainLogo: {
-      src: string;
-      alt: string;
-   };
-   secondLogo: {
-      src: string;
-      alt: string;
-   };
+   mainLogo: LogoProps;
+   secondLogo: LogoProps;
    content: {
       service: content;
       education: content;
@@ -30,8 +28,20 @@ const Footer: FC<FooterProps> = ({ mainLogo, secondLogo, content }) => {
       <footer>
          <div className="footer-container">
             <div className="footer-logos">
-               <LogoCB className="footer-passive-logo" src={mainLogo.src} alt={mainLogo.alt} />
-               <LogoCS className="footer-passive-logo" src={secondLogo.src} alt={secondLogo.alt} />
+               <Logo
+                  className="footer-passive-logo"
+                  src={mainLogo.src}
+                  alt={mainLogo.alt}
+                  mainLogo={false}
+                  logoColor={""}
+               />
+               <Logo
+                  className="footer-passive-logo"
+                  src={secondLogo.src}
+                  alt={secondLogo.alt}
+                  mainLogo={false}
+                  logoColor={""}
+               />
             </div>
             <ul className="footer-content">
                <FooterBox className="footer-box-services" text={content.service} />

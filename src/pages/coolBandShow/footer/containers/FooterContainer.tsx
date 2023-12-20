@@ -1,14 +1,5 @@
 import Footer from "../components/Footer";
-const mainLogo = {
-   src: "/coolbandLogo.png",
-   alt: "CoolBand",
-};
-
-const secondLogo = {
-   src: "/coolStudioLogo.png",
-   alt: "CoolStudio",
-};
-
+import { logos } from "../../../../temp/logos";
 const content = {
    service: {
       p: "Наши услуги",
@@ -30,6 +21,6 @@ const content = {
 };
 
 const FooterContainer = () => {
-   return <Footer secondLogo={secondLogo} mainLogo={mainLogo} content={content} />;
+   return <Footer secondLogo={logos.secondLogo} mainLogo={logos.mainLogo} content={content} />;
 };
 export default FooterContainer;

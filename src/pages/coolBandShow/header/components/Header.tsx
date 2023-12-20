@@ -1,11 +1,14 @@
 import { HashLink, NavHashLink } from "react-router-hash-link";
-import Language from "../../../../shared/UI/language/Language";
-import LogoCB from "../../../../shared/UI/logoCB/LogoCB";
-import LogoCS from "../../../../shared/UI/logoCS/LogoCS";
+// import Language from "../../../../shared/UI/language/Language";
 import SocialLinks from "../../../../shared/UI/socialLinks/SocialLinks";
 import { NavLink } from "react-router-dom";
 import { FC } from "react";
-
+import Logo from "../../../../shared/UI/logo/Logo";
+type LogoProps = {
+   src: string;
+   alt: string;
+   color: string;
+};
 interface HeaderProps {
    links: {
       telegram: string;
@@ -14,22 +17,15 @@ interface HeaderProps {
       youtube: string;
       tiktok: string;
    };
-   mainLogo: {
-      src: string;
-      alt: string;
-   };
-   secondLogo: {
-      src: string;
-      alt: string;
-   };
+   mainLogo: LogoProps;
+   secondLogo: LogoProps;
    lyrics: string;
 }
 
 const Header: FC<HeaderProps> = ({ links, mainLogo, secondLogo, lyrics }) => {
    return (
       <header className="header">
-         {/* LogoCB will accept dynamic data from backend */}
-         <LogoCB className="header-active-logo" src={mainLogo.src} alt={mainLogo.alt} />
+         <Logo mainLogo={true} src={mainLogo.src} alt={mainLogo.alt} logoColor={mainLogo.color} />
          <nav className="header-nav">
             <ul className="navigation">
                <li>
@@ -47,17 +43,12 @@ const Header: FC<HeaderProps> = ({ links, mainLogo, secondLogo, lyrics }) => {
                   <HashLink to={"/#collab"}>Коллаборация</HashLink>
                </li>
                <li>
-                  {/* anchor tag data from backend */}
                   <a href={lyrics}>Репертуар</a>
                </li>
             </ul>
-            {/* SocialLinks accepts data from backend */}
             <SocialLinks links={links} />
-            {/* Language unfinished logic i18next */}
-            <Language />
          </nav>
-         {/* LogoCS will accept data from backend */}
-         <LogoCS className="header-passive-logo" src={secondLogo.src} alt={secondLogo.alt} />
+         <Logo mainLogo={false} src={secondLogo.src} alt={secondLogo.alt} logoColor={secondLogo.color} />
       </header>
    );
 };
