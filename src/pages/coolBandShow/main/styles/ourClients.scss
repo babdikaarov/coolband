@@ -1,46 +1,46 @@
-
 .our-clients-qty {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 335px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 335px;
 }
 
 .our-clients-qty p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .our-clients-qty div {
-    // position size
-    margin: 0 auto;
-    width: fit-content;
-    padding: 10px 20px;
+  // position size
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px 20px;
 
-    // typography
-    color: var(--Black-bakcraund, #151515);
-    text-align: center;
-    
-    /* H1 - Bold 32 */
-    font-family: "Montserrat Alternates";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%; /* 40px */
-    letter-spacing: 0.64px;
-    border-radius: 16px;
-    background: #FED102;
+  // typography
+  color: var(--Black-bakcraund, #151515);
+  text-align: center;
+
+  /* H1 - Bold 32 */
+  font-family: "Montserrat Alternates";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 40px */
+  letter-spacing: 0.64px;
+  border-radius: 16px;
+  background: #fed102;
 }
 
 .our-client-cards {
-    margin-top: 64px;
-    margin-left: 100px;
-    display: flex;
-    gap: 24px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    border-start-start-radius: 15px;
-    border-end-start-radius: 15px;
+  margin: 60px 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 34px;
+  // overflow-x: scroll;
+  // overflow-y: hidden;
+  border-start-start-radius: 15px;
+  border-end-start-radius: 15px;
 }
 
 .our-client-cards::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}

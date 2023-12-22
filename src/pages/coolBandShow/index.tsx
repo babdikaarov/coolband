@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import HeaderContainer from "./header/containers/HeaderContainer";
-import FooterContainer from "./footer/containers/FooterContainer";
+import HeaderContainer from "./header/HeaderContainer";
+import FooterContainer from "./footer/FooterContainer";
 
 function CoolBandShow() {
    return (

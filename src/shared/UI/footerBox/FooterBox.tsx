@@ -1,23 +1,36 @@
 import React, { FC } from "react";
+import { NavLink } from "react-router-dom";
+
+type FooterBox = {
+      withLinks: boolean;
+      p: string;
+      li: { text: string; href: string }[] | string[];
+};
 
 interface FooterBoxProps extends React.HTMLAttributes<HTMLLIElement> {
-   text: {
-      p: string;
-      li: string[];
-   };
+      text: FooterBox;
 }
 
 const FooterBox: FC<FooterBoxProps> = ({ text, ...props }) => {
-   return (
-      <li {...props}>
-         <p>{text.p}</p>
-         <ul>
-            {text.li.map((el, i) => (
-               <li key={i}>{el}</li>
-            ))}
-         </ul>
-      </li>
-   );
-};
+      const { p, li } = text;
 
+      return (
+            <li {...props}>
+                  <h5>{p}</h5>
+                  <ul>
+                        {li.map((el, i) =>
+                              !Object.hasOwn(el, "href") ? (
+                                    <li key={i}>
+                                          <NavLink to="/studio/#about">{el}</NavLink>
+                                    </li>
+                              ) : (
+                                    <li key={i}>
+                                          <NavLink to={el.href}>{el.text}</NavLink>
+                                    </li>
+                              ),
+                        )}
+                  </ul>
+            </li>
+      );
+};
 export default FooterBox;

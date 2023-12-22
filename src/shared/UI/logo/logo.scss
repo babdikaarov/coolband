@@ -2,7 +2,6 @@
    position: relative;
    width: 104px;
    height: 60px;
-   background-color: $main-background-color;
 }
 
 .hover-state-background {
@@ -21,6 +20,7 @@
    opacity: 0.4;
 }
 
+/* Additional styles for the image if needed */
 .page-logo img {
    display: block;
    width: 100%;

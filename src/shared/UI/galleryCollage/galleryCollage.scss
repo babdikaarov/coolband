@@ -1,0 +1,58 @@
+.gallery-card {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-card-button-back {
+  align-self: flex-start;
+  padding-top: 13px;
+  background: none;
+}
+.gallery-card h3 {
+  margin: 0;
+}
+
+.gallery-card-button-more,
+.gallery-card-button-less {
+  margin-top: 37px;
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  background: none;
+  color: #fcfcfc;
+}
+.image-collage {
+  margin-top: 37px;
+  // min-height: 950px;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid: repeat(4, 1fr) / repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: dense;
+  color: black;
+  font-size: 60px;
+}
+.image-collage-card {
+  width: 100%;
+  min-height: 240px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 16px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.image-collage-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spanClass {
+  height: 100%;
+  grid-row: span 2;
+}
