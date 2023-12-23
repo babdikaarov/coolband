@@ -29,6 +29,7 @@ export default function TwoGis() {
     // Check if DG (2GIS) is defined
     // if (DG.ready === true || typeof DG !== "undefined") {
     // Create a map centered at [54.98, 82.89] with zoom level 13
+    // const DG = window.DG;
     DG.then(function () {
       map = DG.map("map", {
         center: coolStudioLocation,
@@ -59,10 +60,11 @@ export default function TwoGis() {
       // });
       marker = DG.marker(coolStudioLocation).addTo(map);
       marker.bindPopup("Мы находимся здесь!");
-
-      openOnHover.onmouseover = function () {
-        marker.openPopup();
-      };
+      if (openOnHover) {
+        openOnHover.onmouseover = function () {
+          marker.openPopup();
+        };
+      }
     });
     // }
   }
