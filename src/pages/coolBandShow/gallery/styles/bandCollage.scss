@@ -1,7 +1,8 @@
-.navigation {
-  width: 70%;
+.band-collage {
   display: flex;
+  padding: 0 100px;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 24px;
   color: $main-font-color;
   font-size: 18px;
@@ -10,4 +11,7 @@
   line-height: normal;
   padding-left: 100px;
   text-wrap: nowrap;
+  text-align: center;
+}
+.band-collage {
 }

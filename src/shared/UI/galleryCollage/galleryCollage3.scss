@@ -1,6 +1,7 @@
 .collage {
   margin: auto;
-  padding: 0 100px;
+  margin-top: 37px;
+  width: calc(100% - 200px);
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
@@ -23,11 +24,11 @@
 }
 
 .portrait {
-  max-height: 478px;
+  height: 100%;
   grid-row: span 2;
 }
 .landscape {
-  max-height: 229px;
+  max-height: 240px;
 }
 
 .collage p {

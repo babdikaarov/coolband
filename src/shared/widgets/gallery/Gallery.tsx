@@ -7,10 +7,14 @@ interface GalleryProps {
     name: string;
     date: string;
     description: string;
-    items: {
-      alt: string;
-      src: string;
-    }[];
+    poster: string;
+    items:
+      | {
+          alt: string;
+          src: string;
+          view: string;
+        }[]
+      | undefined;
   }[];
 }
 
@@ -23,12 +27,12 @@ const Gallery: FC<GalleryProps> = ({ galleryData }) => {
         <React.Fragment key={event.eventID + i}>
           <Link to={`/gallery/${event.eventID}`}>
             <div
-              style={{ backgroundImage: `url(${event.items[1].src})` }}
+              style={{ backgroundImage: `url(${event.poster})` }}
               title={event.description}
               className="gallery-cards-content"
             >
               <p>{event.date}</p>
-              <h4 className="h4-bold">{event.name}</h4>
+              <h4 className="h4-bold">{`Id of event ${event.eventID}`}</h4>
             </div>
           </Link>
         </React.Fragment>
