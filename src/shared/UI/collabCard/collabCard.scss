@@ -1,53 +1,40 @@
 .collab-card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 334px;
-    min-width: 230px;
-    border-radius: 16px;
-    transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 334px;
+  min-width: 230px;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
 .collab-card {
-    height: 100%;
-    width: 100%;
-    border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 }
-
 
 // styles are hard coded
 
-.collab-card p{
-    color: #FFF;
-    /* H4- Regular 18 */
-    font-family: "Montserrat Alternates";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-    transition: all 0.3s ease-out 0.2s;
+.collab-card p {
+  color: $main-font-color;
+  /* H4- Regular 18 */
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .collab-card-container:hover {
-    position: relative;
-    transform: scale(1.2);
-    z-index: 2;
+  position: relative;
+  height: calc(334px + 45px);
+  min-width: calc(230px + 50px);
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  color: $main-font-color;
+  font-family: $main-font;
+  letter-spacing: 0.4px;
 }
-
-
-.collab-card-container:hover p{
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 150%; /* 30px */
-    color: $main-font-color;
-    /* H 4\1 */
-    font-family: $main-font;
-    letter-spacing: 0.4px;    
-    }
-
-
-
-
-
-
-

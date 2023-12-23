@@ -9,7 +9,7 @@ interface OurClientsProps {
 }
 const OurClients: FC<OurClientsProps> = ({ clientCards }) => {
   return (
-    <ScrollComponentWrapper header={"Наши клиенты"}>
+    <ScrollComponentWrapper header={"Наши клиенты"} id="partners">
       <div className="our-clients-qty">
         <div>500+</div>
         <p className="h3">Более 500 корпоративов и мероприятий</p>

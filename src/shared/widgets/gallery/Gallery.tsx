@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import gallery from "../../../temp/gallery";
-const Gallery = () => {
-  interface Events {
+
+interface GalleryProps {
+  galleryData: {
     eventID: number;
     name: string;
     date: string;
@@ -11,8 +11,11 @@ const Gallery = () => {
       alt: string;
       src: string;
     }[];
-  }
-  const events: Events[] = gallery;
+  }[];
+}
+
+const Gallery: FC<GalleryProps> = ({ galleryData }) => {
+  const events = galleryData;
 
   return (
     <div className="gallery">

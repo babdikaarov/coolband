@@ -3,9 +3,10 @@ interface ScrollComponentWrapperProps extends React.HTMLAttributes<HTMLDivElemen
   header: string;
   children: ReactNode;
 }
-const ScrollComponentWrapper: FC<ScrollComponentWrapperProps> = ({ header, children, ...props }) => {
+const ScrollComponentWrapper: FC<ScrollComponentWrapperProps> = ({ header, className = "", id, children }) => {
   return (
-    <div className={`shared-scroll-wrapper ${props.className}`}>
+    <div className={`shared-scroll-wrapper ${className}`}>
+      <div id={id} className="anchor" />
       <h3 className="global-component-header">{header}</h3>
       {children}
     </div>
