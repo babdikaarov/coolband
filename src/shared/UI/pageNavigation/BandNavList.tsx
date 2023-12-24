@@ -1,6 +1,4 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { HashLink, NavHashLink } from "react-router-hash-link";
 
 interface BandNavListProps {
@@ -23,7 +21,9 @@ const BandNavList: FC<BandNavListProps> = ({ lyrics }) => {
         <HashLink to={"/#about"}>О нас</HashLink>
       </li>
       <li>
-        <NavHashLink to={"/gallery"}>Галерея</NavHashLink>
+        <NavHashLink to={"/gallery"} onClick={() => window.scrollTo(0, 0)}>
+          Галерея
+        </NavHashLink>
       </li>
       <li>
         <HashLink to={"/#collaboration"}>Коллаборация</HashLink>

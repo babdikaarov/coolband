@@ -1,4 +1,5 @@
 import { FC } from "react";
+// import Gallery from "../../../../shared/widgets/gallery/Gallery";
 import Gallery from "../../../../shared/widgets/gallery/Gallery";
 interface BandGalleryProps {
   galleryData: {
