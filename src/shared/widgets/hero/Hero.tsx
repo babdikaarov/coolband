@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 import ReserveUsButton from "../../UI/buttons/ReserveUsButton";
 interface HeroProps {
   contacts: string;
@@ -12,6 +12,18 @@ interface HeroProps {
   }[];
 }
 const Hero: FC<HeroProps> = ({ ...props }) => {
+  // const video = useRef(null)
+
+  useEffect(() => {
+    // if (VideoColorSpace.current) {
+    //   video play
+    // }
+    // video
+    // const video = document.getElementById("videoTag");
+    // video?.onload(() => {
+    //   plasad;
+  });
+  // });
   return (
     <div className="hero">
       <video id="videoTag" autoPlay muted loop playsInline className="hero-video">

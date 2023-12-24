@@ -1,4 +1,6 @@
 import { FC } from "react";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink, NavHashLink } from "react-router-hash-link";
 
 interface BandNavListProps {

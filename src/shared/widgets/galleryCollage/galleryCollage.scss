@@ -16,6 +16,10 @@
   overflow: hidden;
 }
 
+.collage-item:hover {
+  cursor: pointer;
+}
+
 .collage-item img {
   width: 100%;
   height: 100%;

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import GalleryCollage from "../../../../shared/UI/galleryCollage/GalleryCollage";
+import GalleryCollage from "../../../../shared/widgets/galleryCollage/GalleryCollage";
 import { backIcon } from "../../../../shared/UI/icons/backForwardIcon";
 import { useNavigate, useParams } from "react-router-dom";
 interface BandCollageProps {
