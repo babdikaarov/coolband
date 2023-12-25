@@ -39,7 +39,7 @@ const Modal: FC<ModalProps> = ({ images, index }) => {
     console.log("right");
   };
 
-  const handleImageClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleImageClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();
 
     console.log("image");

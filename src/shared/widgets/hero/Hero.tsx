@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from "react";
+import { FC, useEffect } from "react";
 import ReserveUsButton from "../../UI/buttons/ReserveUsButton";
 interface HeroProps {
   contacts: string;
