@@ -8,18 +8,18 @@ import OurTeamContainer from "./containers/OurTeamContainer";
 import WhyUsContainer from "./containers/WhyUsContainer";
 
 function CBMain() {
-  return (
-    <>
-      <HeroContainer />
-      <AboutBandContainer />
-      <WhyUsContainer />
-      <OurEventsContainer />
-      <OurTeamContainer />
-      <CollabContainer />
-      <OurClientsContainer />
-      <ContactUsContainer />
-    </>
-  );
+   return (
+      <>
+         <HeroContainer />
+         <AboutBandContainer />
+         <WhyUsContainer />
+         <OurEventsContainer />
+         <OurTeamContainer />
+         <CollabContainer />
+         <OurClientsContainer />
+         <ContactUsContainer />
+      </>
+   );
 }
 
 export default CBMain;

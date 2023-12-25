@@ -1,24 +1,24 @@
-.curve-shape-top{
-    translate: (0 100px);
-    z-index: 2;
-    position: absolute;
-    width: 100%;
-    fill: $main-background-color;
-    // fill: aquamarine;
-  }
-  .curve-shape-top svg {
-    height: 64px;
-    width: 100%;
-  }
-  .curve-shape-bottom{
-    transform: rotate(180deg) translateY(-438px);
-    z-index: 2;
-    position: absolute;
-    width: 100%;
-    fill: $main-background-color;
-    // fill: aquamarine;
-  }
-  .curve-shape-bottom svg {
-    height: 64px;
-    width: 100%;
-  }
+.curve-shape-top {
+   translate: (0 100px);
+   z-index: 2;
+   position: absolute;
+   width: 100%;
+   fill: $main-background-color;
+   // fill: aquamarine;
+}
+.curve-shape-top svg {
+   height: 64px;
+   width: 100%;
+}
+.curve-shape-bottom {
+   transform: rotate(180deg) translateY(-438px);
+   z-index: 2;
+   position: absolute;
+   width: 100%;
+   fill: $main-background-color;
+   // fill: aquamarine;
+}
+.curve-shape-bottom svg {
+   height: 64px;
+   width: 100%;
+}

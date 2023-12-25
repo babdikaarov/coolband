@@ -1,31 +1,31 @@
 .reserve-us-button {
-  width: 400px;
-  height: 53px;
-  border-radius: 16px;
-  color: $main-background-color;
-  border: 1px solid #fed102;
+   width: 400px;
+   height: 53px;
+   border-radius: 16px;
+   color: $main-background-color;
+   border: 1px solid #fed102;
 
-  /* H3- Medium */
-  font-family: $main-font;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 36px */
-  letter-spacing: 0.48px;
-  background-color: #fed102;
+   /* H3- Medium */
+   font-family: $main-font;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 36px */
+   letter-spacing: 0.48px;
+   background-color: #fed102;
 }
 
 .reserve-us-button svg {
-  top: 4px;
-  position: relative;
+   top: 4px;
+   position: relative;
 }
 .reserve-us-button svg path {
-  fill: $main-background-color;
+   fill: $main-background-color;
 }
 
 .reserve-us-button:hover a {
-  background-color: #fed102;
-  color: #151515;
+   background-color: #fed102;
+   color: #151515;
 }
 
 // .reserve-us-button:hover svg path {

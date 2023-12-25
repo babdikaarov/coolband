@@ -1,21 +1,21 @@
 .header {
-  max-width: 1240px;
-  top: 0;
-  width: -webkit-fill-available;
-  padding: 0 100px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 10;
-  background-color: $main-background-color;
+   max-width: 1240px;
+   top: 0;
+   width: -webkit-fill-available;
+   padding: 0 100px;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+   z-index: 10;
+   background-color: $main-background-color;
 }
 
 .header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   flex-wrap: wrap;
 }

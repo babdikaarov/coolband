@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 function Gallery() {
-  return <Outlet />;
+   return <Outlet />;
 }
 
 export default Gallery;

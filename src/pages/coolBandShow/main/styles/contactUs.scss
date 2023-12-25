@@ -1,44 +1,42 @@
-
 // chekc with designer element
 .contact-us h4 {
-    color: #FFF;
-    text-align: center;
-    
-    /* H2 - Bold */
-    font-family: $main-background-color;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; /* 39px */
-    letter-spacing: 0.52px;    
+   color: #fff;
+   text-align: center;
+
+   /* H2 - Bold */
+   font-family: $main-background-color;
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 150%; /* 39px */
+   letter-spacing: 0.52px;
 }
 
-.contact-us-content h3{
-    margin-bottom: 0;
+.contact-us-content h3 {
+   margin-bottom: 0;
 }
 .contact-us-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+   gap: 70px;
 }
 
 .contact-us {
-    padding: 0 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 122px;
+   padding: 0 100px;
+   display: flex;
+   flex-direction: row;
+   gap: 122px;
 }
 
 .contact-us > * {
-    width: 100%;
+   width: 100%;
 }
 
 .contact-us-map {
-    height: 461px;
-    background-color: grey;
-    border-radius: $border-radius;
-    overflow: hidden;
+   height: 461px;
+   background-color: grey;
+   border-radius: $border-radius;
+   overflow: hidden;
 }
-

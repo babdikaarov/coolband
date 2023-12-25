@@ -9,160 +9,160 @@
 // global rules
 
 :root {
-  background-color: $main-background-color;
-  color: $main-font-color;
-  font-family: $main-font;
-  max-width: 1440px;
-  margin: auto;
-  margin-bottom: 60px;
-  scroll-behavior: smooth;
+   background-color: $main-background-color;
+   color: $main-font-color;
+   font-family: $main-font;
+   max-width: 1440px;
+   margin: auto;
+   margin-bottom: 60px;
+   scroll-behavior: smooth;
 }
 
 body {
-  font-family: $main-font;
-  // .header is absolute position with heaigh 80px to accomodate space
-  margin-top: 110px;
-  // ^^^^^^^^^^^^^^^
+   font-family: $main-font;
+   // .header is absolute position with heaigh 80px to accomodate space
+   margin-top: 110px;
+   // ^^^^^^^^^^^^^^^
 }
 a {
-  text-decoration: none;
+   text-decoration: none;
 }
 
 .active {
-  color: $hover-color;
+   color: $hover-color;
 }
 
 a:active {
-  color: $hover-color;
+   color: $hover-color;
 }
 
 a:hover {
-  color: $hover-color;
+   color: $hover-color;
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  margin-top: 80px;
-  overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 80px;
+   margin-top: 80px;
+   overflow: hidden;
 }
 
 // font styles
 
 .global-component-header {
-  margin: 0 auto;
-  margin-bottom: 64px;
-  z-index: 5;
-  color: $main-font-color;
-  text-align: right;
-  font-family: $main-font;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 125%; /* 40px */
-  letter-spacing: 0.64px;
+   margin: 0 auto;
+   margin-bottom: 64px;
+   z-index: 5;
+   color: $main-font-color;
+   text-align: right;
+   font-family: $main-font;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 125%; /* 40px */
+   letter-spacing: 0.64px;
 }
 
 .global-component-p {
-  color: $main-font-color;
-  text-align: center;
-  font-family: $main-font;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: 0.36px;
+   color: $main-font-color;
+   text-align: center;
+   font-family: $main-font;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%; /* 27px */
+   letter-spacing: 0.36px;
 }
 
 .h3 {
-  color: $main-font-color;
-  font-family: $main-font;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 44px; /* 183.333% */
+   color: $main-font-color;
+   font-family: $main-font;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 44px; /* 183.333% */
 }
 
 .h5 {
-  color: $main-font-color;
-  font-family: $main-font;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+   color: $main-font-color;
+   font-family: $main-font;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
 }
 
 // temporary fonts
 
 .h1-bold {
-  color: #000;
-  /* H1 - Bold 32 */
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 125%; /* 40px */
-  letter-spacing: 0.64px;
+   color: #000;
+   /* H1 - Bold 32 */
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 125%; /* 40px */
+   letter-spacing: 0.64px;
 }
 
 .h2-bold {
-  color: #000;
+   color: #000;
 
-  /* H2 - Bold */
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 39px */
-  letter-spacing: 0.52px;
+   /* H2 - Bold */
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 150%; /* 39px */
+   letter-spacing: 0.52px;
 }
 
 .h3-medium {
-  color: $main-font-color;
+   color: $main-font-color;
 
-  /* H3- Medium */
-  font-family: $main-font;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 36px */
-  letter-spacing: 0.48px;
+   /* H3- Medium */
+   font-family: $main-font;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 36px */
+   letter-spacing: 0.48px;
 }
 
 .h3-bold {
-  color: #000;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 36px */
-  letter-spacing: 0.48px;
+   color: #000;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 150%; /* 36px */
+   letter-spacing: 0.48px;
 }
 
 .h4-bold {
-  color: $hover-color;
-  font-family: $main-font;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
-  letter-spacing: 0.4px;
+   color: $hover-color;
+   font-family: $main-font;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 150%; /* 30px */
+   letter-spacing: 0.4px;
 }
 
 .h5-medium {
-  color: $main-font-color;
-  /* H5- Reg */
-  font-family: $main-font;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 27px */
-  letter-spacing: 0.36px;
+   color: $main-font-color;
+   /* H5- Reg */
+   font-family: $main-font;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%; /* 27px */
+   letter-spacing: 0.36px;
 }
 
 // Scroll hash links
 #about {
-  scroll-margin-top: 150px;
+   scroll-margin-top: 150px;
 }
 
 #collaboration {
-  scroll-margin-top: 250px;
+   scroll-margin-top: 250px;
 }

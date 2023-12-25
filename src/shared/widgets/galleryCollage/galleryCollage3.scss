@@ -1,38 +1,38 @@
 .collage {
-  margin: auto;
-  margin-top: 37px;
-  width: calc(100% - 200px);
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  color: black;
-  font-size: 60px;
+   margin: auto;
+   margin-top: 37px;
+   width: calc(100% - 200px);
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
+   color: black;
+   font-size: 60px;
 }
 .collage-item {
-  // height: 240px;
-  overflow: hidden;
-  background-color: white;
-  border-radius: 16px;
-  object-fit: contain;
-  overflow: hidden;
+   // height: 240px;
+   overflow: hidden;
+   background-color: white;
+   border-radius: 16px;
+   object-fit: contain;
+   overflow: hidden;
 }
 
 .collage-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 .portrait {
-  height: 100%;
-  grid-row: span 2;
+   height: 100%;
+   grid-row: span 2;
 }
 .landscape {
-  max-height: 240px;
+   max-height: 240px;
 }
 
 .collage p {
-  position: absolute;
-  color: black;
-  font-size: 50px;
+   position: absolute;
+   color: black;
+   font-size: 50px;
 }

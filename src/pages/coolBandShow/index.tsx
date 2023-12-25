@@ -5,11 +5,11 @@ import FooterContainer from "./footer/FooterContainer";
 // import { useRef } from "react";
 
 function CoolBandShow() {
-  //   const nodeRef = useRef();
-  return (
-    <>
-      <HeaderContainer />
-      {/* <TransitionGroup className="transitionGroup">
+   //   const nodeRef = useRef();
+   return (
+      <>
+         <HeaderContainer />
+         {/* <TransitionGroup className="transitionGroup">
         <CSSTransition
           nodeRef={nodeRef}
           timeout={500}
@@ -18,12 +18,12 @@ function CoolBandShow() {
           }}
           classNames="transitionGroupSwitch"
         > */}
-      <Outlet />
-      {/* </CSSTransition> */}
-      {/* </TransitionGroup> */}
-      <FooterContainer />
-    </>
-  );
+         <Outlet />
+         {/* </CSSTransition> */}
+         {/* </TransitionGroup> */}
+         <FooterContainer />
+      </>
+   );
 }
 
 export default CoolBandShow;

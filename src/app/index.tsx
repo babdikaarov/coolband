@@ -10,26 +10,26 @@ import StudentsGallery from "../pages/coolStudio/studentsGallery";
 import BandGalleryContainer from "../pages/coolBandShow/gallery/containers/BandGalleryContainer";
 import BandCollageContainer from "../pages/coolBandShow/gallery/containers/BandCollageContainer";
 function AppRoute() {
-  return (
-    <>
-      <Routes>
-        <Route path="" element={<App />}>
-          <Route path="" element={<CoolBandShow />}>
-            <Route index element={<CBMain />} />
-            <Route path="gallery" element={<Gallery />}>
-              <Route index element={<BandGalleryContainer />} />
-              <Route path=":id" element={<BandCollageContainer />} />
+   return (
+      <>
+         <Routes>
+            <Route path="" element={<App />}>
+               <Route path="" element={<CoolBandShow />}>
+                  <Route index element={<CBMain />} />
+                  <Route path="gallery" element={<Gallery />}>
+                     <Route index element={<BandGalleryContainer />} />
+                     <Route path=":id" element={<BandCollageContainer />} />
+                  </Route>
+               </Route>
+               <Route path="studio" element={<CoolStudio />}>
+                  <Route index element={<CSMain />} />
+                  <Route path="events" element={<EventsGallery />} />
+                  <Route path="students" element={<StudentsGallery />} />
+               </Route>
             </Route>
-          </Route>
-          <Route path="studio" element={<CoolStudio />}>
-            <Route index element={<CSMain />} />
-            <Route path="events" element={<EventsGallery />} />
-            <Route path="students" element={<StudentsGallery />} />
-          </Route>
-        </Route>
-      </Routes>
-    </>
-  );
+         </Routes>
+      </>
+   );
 }
 
 export default AppRoute;

@@ -1,40 +1,40 @@
 .gallery {
-  margin: 80px 100px 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+   margin: 80px 100px 0;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
 }
 
 .gallery div {
-  aspect-ratio: 400 / 270;
-  border-radius: 16px;
-  background: center / cover no-repeat;
+   aspect-ratio: 400 / 270;
+   border-radius: 16px;
+   background: center / cover no-repeat;
 }
 
 .gallery-cards-content h4 {
-  padding: 0 0 15px 15px;
+   padding: 0 0 15px 15px;
 }
 .gallery-cards-content p {
-  padding-left: 15px;
-  color: $hover-color;
-  font-family: $main-font;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 21px */
-  letter-spacing: 0.28px;
+   padding-left: 15px;
+   color: $hover-color;
+   font-family: $main-font;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%; /* 21px */
+   letter-spacing: 0.28px;
 }
 .gallery-cards-content * {
-  padding: 6px;
+   padding: 6px;
 }
 
 .gallery-cards-content {
-  color: $hover-color;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  gap: 4px;
-  gap: 4px;
+   color: $hover-color;
+   font-size: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-end;
+   gap: 4px;
+   gap: 4px;
 }
