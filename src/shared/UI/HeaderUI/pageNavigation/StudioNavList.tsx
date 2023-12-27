@@ -1,0 +1,33 @@
+import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
+const BandNavList = () => {
+   const { pathname } = useLocation();
+
+   return (
+      <ul className="navigation">
+         <li>
+            <HashLink to={"/studio"} className={pathname === "/studio" ? "active" : ""}>
+               Главная
+            </HashLink>
+         </li>
+         <li>
+            <HashLink to={"/studio#about"}>О студии</HashLink>
+         </li>
+         <li>
+            <HashLink to={"/studio#majors"}>Направления</HashLink>
+         </li>
+         <li>
+            <HashLink to={"/studio#teachers"}>Преподаватели</HashLink>
+         </li>
+         <li>
+            <HashLink to={"/studio#students"}>Ученики</HashLink>
+         </li>
+         <li>
+            <HashLink to={"/studio#concerts"}>Концерты</HashLink>
+         </li>
+      </ul>
+   );
+};
+
+export default BandNavList;

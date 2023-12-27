@@ -1,8 +1,8 @@
-import SocialLinks from "../../UI/socialLinks/SocialLinks";
+import SocialLinks from "../../UI/HeaderUI/socialLinks/SocialLinks";
 import { FC, useEffect, useState } from "react";
-import Logo from "../../UI/logo/Logo";
+import Logo from "../../UI/singleElements/Logo/Logo";
 import { useLocation } from "react-router-dom";
-import TopButtons2 from "../../UI/buttons/topButtons2/TopButtons2";
+import TopButtons2 from "../../UI/HeaderUI/topButtons2/TopButtons2";
 
 type logos = {
    bandLogo: Logo;
@@ -40,13 +40,13 @@ const Header3: FC<HeaderProps> = ({ links, pageLogos, lyrics, NavList }) => {
    return (
       <>
          <header className="header">
-            <Logo logo={logoToDisplay} />
-            <nav className="header-nav">
+            <nav>
+               <Logo logo={logoToDisplay} />
                <NavList lyrics={lyrics} />
                <SocialLinks links={links} />
             </nav>
+            <TopButtons2 />
          </header>
-         <TopButtons2 />
       </>
    );
 };

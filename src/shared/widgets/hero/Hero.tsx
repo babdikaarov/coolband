@@ -1,5 +1,8 @@
-import { FC, useEffect } from "react";
-import ReserveUsButton from "../../UI/buttons/ReserveUsButton";
+import { FC } from "react";
+import ReserveUsButton from "../../UI/HeroUI/buttons/ReserveUsButton";
+import HeroText from "../../UI/HeroUI/heroText/HeroText";
+import StudioButton from "../../UI/HeroUI/buttons/StudioButton";
+
 interface HeroProps {
    contacts: string;
    video: {
@@ -10,29 +13,23 @@ interface HeroProps {
       src: string;
       alt: string;
    }[];
+   text: {
+      header: string;
+      paragraph: string;
+   };
+   mainPage: boolean;
 }
-const Hero: FC<HeroProps> = ({ ...props }) => {
-   // const video = useRef(null)
-
-   useEffect(() => {
-      // if (VideoColorSpace.current) {
-      //   video play
-      // }
-      // video
-      // const video = document.getElementById("videoTag");
-      // video?.onload(() => {
-      //   plasad;
-   });
-   // });
+const Hero: FC<HeroProps> = ({ mainPage, ...props }) => {
    return (
-      <div className="hero">
+      <section className="hero">
          <video id="videoTag" autoPlay muted loop playsInline className="hero-video">
             {props.video.map((src, i) => (
                <source key={i} src={src.src} type={src.type} />
             ))}
          </video>
-         <ReserveUsButton whatsapp={props.contacts} />
-      </div>
+         <HeroText header={props.text.header} paragraph={props.text.paragraph} />
+         {!mainPage ? <StudioButton /> : <ReserveUsButton whatsapp={props.contacts} />}
+      </section>
    );
 };
 

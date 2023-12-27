@@ -18,9 +18,7 @@
 // styles are hard coded
 
 .collab-card p {
-   color: $main-font-color;
    /* H4- Regular 18 */
-   font-family: $main-font;
    font-size: 18px;
    font-weight: 400;
    line-height: normal;
@@ -34,7 +32,5 @@
    font-size: 20px;
    font-weight: 700;
    line-height: 150%; /* 30px */
-   color: $main-font-color;
-   font-family: $main-font;
    letter-spacing: 0.4px;
 }

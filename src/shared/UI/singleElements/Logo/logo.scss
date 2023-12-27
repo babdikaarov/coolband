@@ -1,0 +1,40 @@
+.page-logo {
+   display: block;
+   position: relative;
+   width: 104px;
+   height: 60px;
+}
+
+.hover-state-background {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   filter: blur(16px);
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.studioLogo {
+   background: radial-gradient(
+      69.21% 74.92% at 0% 106.05%,
+      var(--dynamic-secondLogo-color) 13.34%,
+      var(--dynamic-secondLogo-color) 41.83%,
+      var(--dynamic-secondLogo-color) 63.51%,
+      var(--dynamic-secondLogo-color) 90.88%
+   );
+}
+
+.mainLogo {
+   background: radial-gradient(
+      69.21% 74.92% at 0% 106.05%,
+      var(--dynamic-mainLogo-color) 13.34%,
+      var(--dynamic-mainLogo-color) 41.83%,
+      var(--dynamic-mainLogo-color) 63.51%,
+      var(--dynamic-mainLogo-color) 90.88%
+   );
+}
+
+.page-logo:hover .hover-state-background {
+   opacity: 0.4;
+}

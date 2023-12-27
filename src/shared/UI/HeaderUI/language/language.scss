@@ -1,0 +1,6 @@
+.language a svg path {
+   fill: $color;
+}
+.language a:hover svg path {
+   fill: $hover_yellow;
+}

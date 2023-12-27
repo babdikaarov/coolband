@@ -1,5 +1,13 @@
+// import AboutStudioContainer from "./containers/AboutStudioContainer";
+import HeroContainer from "./containers/HeroContainer";
+
 function CSMain() {
-   return <div>CSMain</div>;
+   return (
+      <>
+         <HeroContainer />
+         {/* <AboutStudioContainer /> */}
+      </>
+   );
 }
 
 export default CSMain;

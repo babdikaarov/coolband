@@ -1,4 +1,4 @@
-import BandNavList from "../../../shared/UI/pageNavigation/BandNavList";
+import BandNavList from "../../../shared/UI/HeaderUI/pageNavigation/BandNavList";
 import { lyrics, pageLogos, tempLinks } from "../../../temp/headerData";
 // import Header from "../../../shared/widgets/header/Header";
 // import Header2 from "../../../shared/widgets/header2/Header2";

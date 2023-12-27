@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { markIcon } from "../../../../shared/UI/icons/whyUsIcon";
-import ScrollComponentWrapper from "../../../../shared/UI/sharedComponent.tsx/ScrollComponentWrapper";
+import ScrollComponentWrapper from "../../../../shared/UI/BlockWrapper/BlockWrapper";
 
 type whyData = {
    header: string;
@@ -13,18 +13,18 @@ interface WhyUsProps {
 
 const WhyUs: FC<WhyUsProps> = ({ whyUsData }) => {
    return (
-      <ScrollComponentWrapper header="Почему выбирают нас">
-         <div className="why-us">
+      <ScrollComponentWrapper header="Почему выбирают нас" className="why-us">
+         <section className="why-us-grid">
             {whyUsData.map((el, i) => (
                <article key={i}>
-                  <h4 className="h3-medium">
+                  <h3>
                      <span>{markIcon}</span>
                      {el.header}
-                  </h4>
-                  <p className="h5-medium">{el.paragraph}</p>
+                  </h3>
+                  <p>{el.paragraph}</p>
                </article>
             ))}
-         </div>
+         </section>
       </ScrollComponentWrapper>
    );
 };

@@ -1,6 +1,6 @@
 import { FC } from "react";
-import TeamCard from "../../../../shared/UI/teamCard/TeamCard";
-import ScrollComponentWrapper from "../../../../shared/UI/sharedComponent.tsx/ScrollComponentWrapper";
+import TeamCard from "../../../../shared/UI/singleElements/teamCard/TeamCard";
+import ScrollComponentWrapper from "../../../../shared/UI/BlockWrapper/BlockWrapper";
 
 interface OurTeamProps {
    cards: {

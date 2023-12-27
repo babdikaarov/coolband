@@ -1,14 +1,16 @@
-@import "./socialLinks/socialLinks.scss";
-@import "./language/language.scss";
+@import "./HeaderUI/socialLinks/socialLinks.scss";
 @import "./clientCard/clientCard.scss";
 @import "./buttons/contactUsButton.scss";
 @import "./collabCard/collabCard.scss";
-@import "./teamCard/teamCard.scss";
-@import "./sharedComponent.tsx/scrollComponentWrapper.scss";
+@import "./singleElements/teamCard/teamCard.scss";
+
+@import "./BlockWrapper/blockWrapper.scss";
 @import "./buttons/moreDetailsButton.scss";
-@import "./lashes/lashes.scss";
-@import "./logo/logo.scss";
-@import "./pageNavigation/bandNavList.scss";
-@import "./buttons/reserveUsButton.scss";
-@import "./buttons/topButtons2/topButtons2.scss";
-@import "./modal/modal.scss";
+@import "./singleElements/lashes/lashes.scss";
+@import "./singleElements/Logo/logo.scss";
+@import "./HeaderUI/pageNavigation/bandNavList.scss";
+@import "./HeroUI/buttons/reserveUsButton.scss";
+@import "./HeaderUI/topButtons2/topButtons2.scss";
+@import "./singleElements/modal/modal.scss";
+@import "./HeroUI/buttons/studioButton.scss";
+@import "./HeroUI/heroText/heroText.scss";

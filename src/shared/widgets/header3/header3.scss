@@ -1,21 +1,17 @@
 .header {
-   max-width: 1240px;
+   max-width: $desktop_width;
+   width: 100%;
    top: 0;
-   width: -webkit-fill-available;
-   padding: 0 100px;
-   height: 80px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
    position: fixed;
    z-index: 10;
-   background-color: $main-background-color;
+   background-color: $background_black;
 }
 
-.header-nav {
+nav {
+   height: 80px;
+   padding-inline: 100px;
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   width: 100%;
-   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 10px;
 }

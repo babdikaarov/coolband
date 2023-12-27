@@ -12,6 +12,10 @@ type HeroData = {
       src: string;
       alt: string;
    }[];
+   text: {
+      header: string;
+      paragraph: string;
+   };
 };
 
 const HeroContainer = () => {
@@ -21,7 +25,7 @@ const HeroContainer = () => {
          setDataHero(getHeroData.bandHero);
       }
    }, [getHeroData]);
-   return <Hero {...dataHero} />;
+   return <Hero {...dataHero} mainPage={true} />;
 };
 
 export default HeroContainer;

@@ -1,0 +1,12 @@
+.hero-text h2 {
+   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+   padding-bottom: 40px;
+}
+.hero-text h6 {
+   max-width: 550px;
+}
+.hero-text {
+   max-width: 900px;
+   position: absolute;
+   transform: translate(10%, -200%);
+}

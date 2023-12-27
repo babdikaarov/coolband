@@ -1,0 +1,7 @@
+.reserve-us-button {
+   @include buttons;
+}
+
+.reserve-us-button:hover {
+   color: $hover_black;
+}

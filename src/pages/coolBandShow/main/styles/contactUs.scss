@@ -1,26 +1,19 @@
-// chekc with designer element
-.contact-us h4 {
-   color: #fff;
-   text-align: center;
-
-   /* H2 - Bold */
-   font-family: $main-background-color;
-   font-size: 26px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 150%; /* 39px */
-   letter-spacing: 0.52px;
+.contact-us-content h2 {
+   padding: 0;
 }
-
 .contact-us-content h3 {
-   margin-bottom: 0;
+   font-size: 26px;
+   font-weight: 700;
+}
+.contact-us-content a {
+   margin: auto;
 }
 .contact-us-content {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    justify-content: space-between;
    flex-direction: column;
-   gap: 70px;
+   gap: 40px;
 }
 
 .contact-us {
@@ -35,8 +28,6 @@
 }
 
 .contact-us-map {
-   height: 461px;
-   background-color: grey;
-   border-radius: $border-radius;
+   border-radius: $border_radius;
    overflow: hidden;
 }

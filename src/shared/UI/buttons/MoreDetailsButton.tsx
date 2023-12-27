@@ -1,12 +1,11 @@
+import { Link } from "react-router-dom";
 import { arrowIconMoreDetails } from "./arrowIconMoreDetails";
 const MoreDetailsButton = () => {
    return (
-      <div className="moreDetailButton">
-         <a href="#">
-            Подробнее
-            {arrowIconMoreDetails}
-         </a>
-      </div>
+      <Link to="/gallery" className="more-events">
+         Подробнее
+         {arrowIconMoreDetails}
+      </Link>
    );
 };
 

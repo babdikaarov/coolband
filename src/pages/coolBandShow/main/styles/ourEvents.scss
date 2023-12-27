@@ -5,6 +5,18 @@
    gap: 36px;
    animation: scroll 15s linear infinite;
 }
+.our-events h2 {
+   padding-bottom: 0px;
+}
+.our-events a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   position: relative;
+   z-index: 2;
+   transform: translate(0%, -100px);
+}
 @keyframes scroll {
    0% {
       transform: translateX(-15px);

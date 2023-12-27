@@ -3,7 +3,6 @@ import eventCards from "../../../../temp/eventCards";
 
 const OurEventsContainer = () => {
    const eventPhotos = [...eventCards, ...eventCards];
-
    return <OurEvents ourEventsCards={eventPhotos} />;
 };
 

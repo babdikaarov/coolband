@@ -1,0 +1,12 @@
+.social-links {
+   display: flex;
+   gap: 10px;
+   height: 24px;
+}
+
+.social-links li a svg path {
+   fill: $fill_white;
+}
+.social-links li a:hover svg path {
+   fill: $fill_yellow;
+}

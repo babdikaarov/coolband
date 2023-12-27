@@ -3,7 +3,18 @@ const events1 = (arr: number[], eventNum: number) => {
       return {
          alt: `${el}`,
          src: `/assets/temp/gallery/event${eventNum}/${i + 1}.jpg`,
-         view: `${i % 3 == 0 ? "portrait" : "landscape"}`,
+         view: "portrait",
+         // view: `${i % 3 == 0 ? "portrait" : "landscape"}`,
+      };
+   });
+};
+const events2 = (arr: number[], eventNum: number) => {
+   return arr.map((el, i) => {
+      return {
+         alt: `${el}`,
+         src: `/assets/temp/gallery/event${eventNum}/${i + 1}.jpg`,
+         // view: `${i % 1 == 0 ? "portrait" : "landscape"}`,
+         view: "landscape",
       };
    });
 };
@@ -18,7 +29,7 @@ const galleryTemp = [
       description: "somewhere",
       poster: "/assets/temp/gallery/event1/1.jpg",
 
-      items: events1(Array(28).fill(1), 1),
+      items: [...events1(Array(28).fill(1), 1), ...events2(Array(28).fill(1), 1)],
    },
    {
       eventID: 2,

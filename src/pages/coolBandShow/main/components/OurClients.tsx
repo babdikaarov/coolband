@@ -1,6 +1,6 @@
 import { FC } from "react";
 import ClientCard from "../../../../shared/UI/clientCard/ClientCard";
-import ScrollComponentWrapper from "../../../../shared/UI/sharedComponent.tsx/ScrollComponentWrapper";
+import ScrollComponentWrapper from "../../../../shared/UI/BlockWrapper/BlockWrapper";
 interface OurClientsProps {
    clientCards: {
       src: string;
@@ -10,16 +10,14 @@ interface OurClientsProps {
 const OurClients: FC<OurClientsProps> = ({ clientCards }) => {
    return (
       <ScrollComponentWrapper header={"Наши клиенты"} id="partners">
-         <div className="our-clients-qty">
-            <div>500+</div>
-            <p className="h3">Более 500 корпоративов и мероприятий</p>
-         </div>
+         <article className="our-clients-qty">
+            <h2>500+</h2>
+            <h3 className="h3">Более 500 корпоративов и мероприятий</h3>
+         </article>
          <div className="our-client-cards">
             {clientCards.map((card, i: number) => (
                <ClientCard key={i} card={card} />
             ))}
-            {/* verify styling with designers */}
-            {/* <div style={{ minWidth: "76px" }}></div> */}
          </div>
       </ScrollComponentWrapper>
    );

@@ -1,13 +1,14 @@
 import { FC, useState } from "react";
-import Modal from "../../UI/modal/Modal";
+import Modal from "../../UI/singleElements/modal/Modal";
 interface GalleryCollageProps {
-   items:
+   items: (
       | {
            alt: string;
            src: string;
            view: string;
-        }[]
-      | undefined;
+        }
+      | undefined
+   )[];
 }
 
 // type Item = {
@@ -29,9 +30,9 @@ const GalleryCollage: FC<GalleryCollageProps> = ({ items }) => {
       <div className="collage">
          {items &&
             items.map((data, i) => (
-               <div key={i} className={`${data.view} collage-item `} onClick={() => handleOpen(i)}>
+               <div key={i} className={`${data?.view} collage-item `} onClick={() => handleOpen(i)}>
                   <p>{i}</p>
-                  <img src={data.src} alt={data.alt} />
+                  <img src={data?.src} alt={data?.alt} />
                </div>
             ))}
          <Modal images={items} index={indexImage} />

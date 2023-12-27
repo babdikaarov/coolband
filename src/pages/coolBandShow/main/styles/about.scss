@@ -1,0 +1,28 @@
+.about {
+   display: flex;
+   width: calc(100% - 200px);
+   margin: 0 auto;
+   gap: 100px;
+}
+
+.about-content {
+   max-width: 60%;
+}
+.about img {
+   object-fit: cover;
+   border-radius: $border_radius;
+}
+
+.about-studio-image {
+   height: 270px;
+}
+.about-band-image {
+   max-width: 400px;
+   height: 457px;
+}
+
+.about-content-text {
+   padding-bottom: 1rem;
+   font-size: 19px;
+   // text-overflow: ellipsis;
+}

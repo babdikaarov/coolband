@@ -1,0 +1,24 @@
+.curve-shape-top {
+   translate: 0 66px;
+   z-index: 2;
+   position: relative;
+   // width: 100%;
+   fill: $fill_black;
+   // fill: aquamarine;
+}
+.curve-shape-top svg {
+   height: 64px;
+   width: 100%;
+}
+.curve-shape-bottom {
+   transform: rotate(180deg) translateY(66px);
+   z-index: 2;
+   position: relative;
+   // width: 100%;
+   fill: $fill_black;
+   // fill: aquamarine;
+}
+.curve-shape-bottom svg {
+   height: 64px;
+   width: 100%;
+}

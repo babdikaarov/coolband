@@ -1,11 +1,7 @@
 footer {
    margin: 0 100px;
-}
-
-.footer-container {
    display: flex;
-   min-width: 100%;
-   gap: 120px;
+   gap: 100px;
 }
 
 .footer-logos {
@@ -14,52 +10,32 @@ footer {
    gap: 10px;
 }
 
-.footer-content h5 {
-   padding-bottom: 14px;
-   color: $main-font-color;
-   font-family: $main-font;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 150%; /* 30px */
-   letter-spacing: 0.4px;
-}
-
-.footer-content p {
-   color: $main-font-color;
-   font-family: $main-font;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 150%; /* 27px */
-   letter-spacing: 0.36px;
-   white-space: nowrap;
-}
-.footer-content a {
-   color: $main-font-color;
-   font-family: $main-font;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 150%; /* 27px */
-   letter-spacing: 0.36px;
+.footer-content h3 {
+   padding-bottom: 10px;
 }
 
 .footer-content {
    display: flex;
    justify-content: space-between;
    width: 100%;
-   gap: 64px;
+   gap: 50px;
 }
 
-.footer-box-contacts ul li a {
+.footer-box-contacts > a {
    white-space: nowrap;
 }
+
+// Education
+
 .footer-box-edu ul {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 0px 25px;
    text-wrap: nowrap;
+}
+
+.footer-box-address {
+   max-width: 20%;
 }
 
 .footer-content li ul {

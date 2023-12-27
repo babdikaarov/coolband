@@ -1,19 +1,49 @@
 // Colors
+$background_black: #151515;
+$background_yellow: #fed102;
 
-$main-background-color: #151515;
+$color: #ffffff;
+$balck_color: #151515;
+$main_color: #fed102;
+$primary_color: #5979fa;
+
+// fill
+$fill_black: #151515;
+$fill_white: #fff;
+$fill_yellow: #fed102;
+$fill_blue: #5979fa;
 
 // Fonts
-$main-font: "Montserrat Alternates";
-$main-font-color: #ffffff;
+$font_family: "Montserrat Alternates";
 
-// Breakpoints
-$mobile-width: 600px;
-$tablet-width: 768px;
-$desktop-width: 992px;
-$large-desktop-width: 1200px;
+$font_medium: 500;
+$font_bold: 700;
 
 // hover
+$hover_yellow: #fed102;
+$hover_white: #fff;
+$hover_black: #151515;
 
-$hover-color: #fed102;
+// border
+$border_radius: 16px;
 
-$border-radius: 16px;
+// layout
+$text_gap: 16px;
+$card_gap: 30px;
+$gallery_gap: 20px;
+
+// Breakpoints
+$mobile_width: 600px;
+$tablet_width: 768px;
+$desktop_width: 1440px;
+$large_desktop_width: 1200px;
+// buttons
+@mixin buttons($buttons: $main_color) {
+   background: $buttons;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 400px;
+   height: 60px;
+   border-radius: $border_radius;
+}
